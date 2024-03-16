@@ -1,7 +1,7 @@
 import requests
 
 # Server base URL
-BASE_URL = "http://127.0.0.1:80"
+BASE_URL = "http://127.0.0.0"
 
 # Endpoint for processing audio
 ENDPOINT = "/process_audio"
@@ -19,7 +19,7 @@ if __name__ == "__main__":
         values = {"file": (FILE_PATH, file, "audio/wav")}  # Changed FILE_PATH to a constant string
         
         # Send the POST request
-        response = requests.post(URL, files=values)
+        response = requests.post(URL, files=values, timeout=100)
         
         # Process the response
         if response.status_code == 200:
