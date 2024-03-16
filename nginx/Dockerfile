@@ -2,6 +2,5 @@
 FROM nginx
 
 # Remove the default nginx config file and replace it with the new one
-RUN rm -f /nginx/conf.d/default.conf
-COPY nginx.conf /nginx/conf.d/
-
+RUN rm -f /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/conf.d/
