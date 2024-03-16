@@ -1,0 +1,19 @@
+torch
+transformers
+librosa
+sacremoses 
+pandas 
+regex 
+mock 
+mosestokenizer
+bitsandbytes 
+scipy 
+accelerate 
+datasets
+sentencepiece
+ttsmms
+pydub
+praat-parselmouth
+openai-whisper @ git+https://github.com/openai/whisper.git
+blobfile
+flask
