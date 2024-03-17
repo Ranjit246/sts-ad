@@ -1,7 +1,9 @@
 torch==2.2.1
+torchvision==0.17.1
 transformers==4.38.2
 librosa==0.10.1
 sacremoses==0.1.1 
+nltk==3.8.1
 pandas==2.2.1
 regex==2023.12.25 
 mock==5.1.0 
@@ -12,8 +14,9 @@ accelerate==0.27.2
 datasets==2.18.0
 sentencepiece==0.2.0
 ttsmms==0.7
-pydub
-praat-parselmouth
+pydub==0.25.1
+praat-parselmouth==0.4.3
 openai-whisper @ git+https://github.com/openai/whisper.git
-blobfile
-flask
+blobfile==2.1.1
+flask==2.2.5
+gunicorn==21.2.0
